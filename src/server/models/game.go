@@ -132,7 +132,7 @@ func (g *Game) updateOptions() *Game {
 		var secondValid = g.isValidOption(second)
 		if firstValid && secondValid {
 			if first == second {
-				if g.optionValueCount(first) <= ColumnMaximums[first]+2 {
+				if g.optionValueCount(first)+2 <= ColumnMaximums[first] {
 					options = appendIfNotPresent(options, [][]int{pairSet[0], pairSet[1]})
 				} else {
 					options = appendIfNotPresent(options, [][]int{pairSet[0]})
