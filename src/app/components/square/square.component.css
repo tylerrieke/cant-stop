@@ -1,0 +1,21 @@
+.square1,
+.square2 {
+  width: 1.5em;
+  height: 1.5em;
+  background: rgba(198, 185, 187, 0.85);
+  border: .05em ridge darkslategrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2em;
+}
+
+.square1 {
+  background-color: #b84053;
+  color: #f4e7e4;
+}
+
+.columnNumber {
+  position: absolute;
+}

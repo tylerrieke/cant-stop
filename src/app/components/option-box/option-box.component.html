@@ -1,0 +1,11 @@
+<div class="option-wrapper">
+  <div class="option-pair">
+    <div app-dice-box [dice]="dicePairs[0]" [diceSize]="'small'"></div>
+    <div style="font-size: 2em;">{{pairTotal(dicePairs[0])}}</div>
+  </div>
+  <div *ngIf="dicePairs.length > 1" class="option-and">And</div>
+  <div *ngIf="dicePairs.length > 1" class="option-pair">
+    <div app-dice-box [dice]="dicePairs[1]" [diceSize]="'small'"></div>
+    <div style="font-size: 2em;">{{pairTotal(dicePairs[1])}}</div>
+  </div>
+</div>

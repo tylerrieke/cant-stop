@@ -1,0 +1,12 @@
+.die-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  flex-wrap: wrap;
+  align-content: center;
+  font-family: 'Open Sans', sans-serif;
+  background: #185427a6;
+  border: .2em ridge darkslategray;
+  margin: .3em;
+}

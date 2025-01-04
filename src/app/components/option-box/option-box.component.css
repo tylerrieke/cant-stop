@@ -1,0 +1,22 @@
+.option-pair {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.option-and {
+  font-size: 1.5em;
+  margin: 1em;
+}
+
+.option-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  flex-wrap: wrap;
+  align-content: center;
+  font-family: 'Open Sans', sans-serif;
+  margin: .3em;
+}

@@ -1,0 +1,4 @@
+<div *ngFor='let square of squares; let isFirst = first'>
+  <div app-square [chips]="square.chips || []" [numValue]="colNum" *ngIf="isFirst" [winningColor]="square.winningChipColor"></div>
+  <div app-square [chips]="square.chips || []" *ngIf="!isFirst" [winningColor]="square.winningChipColor"></div>
+</div>

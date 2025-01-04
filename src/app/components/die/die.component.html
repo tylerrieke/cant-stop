@@ -1,0 +1,58 @@
+<div *ngIf="value == 1" class="first-face" [ngClass]="'dice-' + getSize()">
+  <span [ngClass]="'dot-' + getSize()">
+  </span>
+</div>
+
+<div *ngIf="value == 2" class="dice second-face" [ngClass]="'dice-' + getSize()">
+  <span [ngClass]="'dot-' + getSize()">
+  </span>
+  <span [ngClass]="'dot-' + getSize()" class="flex-end">
+  </span>
+</div>
+
+<div *ngIf="value == 3" class="dice third-face" [ngClass]="'dice-' + getSize()">
+  <span [ngClass]="'dot-' + getSize()"></span>
+  <span [ngClass]="'dot-' + getSize()" class="align-center"></span>
+  <span [ngClass]="'dot-' + getSize()" class="flex-end"></span>
+</div>
+
+<div *ngIf="value == 4" class="fourth-face dice" [ngClass]="'dice-' + getSize()">
+  <div class="column">
+    <span [ngClass]="'dot-' + getSize()"></span>
+    <span [ngClass]="'dot-' + getSize()"></span>
+  </div>
+  <div class="column">
+    <span [ngClass]="'dot-' + getSize()"></span>
+    <span [ngClass]="'dot-' + getSize()"></span>
+  </div>
+</div>
+<div *ngIf="value == 5" class="fifth-face dice" [ngClass]="'dice-' + getSize()">
+
+  <div class="column">
+    <span [ngClass]="'dot-' + getSize()"></span>
+    <span [ngClass]="'dot-' + getSize()"></span>
+  </div>
+
+  <div class="column">
+    <span [ngClass]="'dot-' + getSize()"></span>
+  </div>
+
+  <div class="column">
+    <span [ngClass]="'dot-' + getSize()"></span>
+    <span [ngClass]="'dot-' + getSize()"></span>
+  </div>
+
+</div>
+<div *ngIf="value == 6" class="sixth-face dice" [ngClass]="'dice-' + getSize()">
+  <div class="column">
+    <span [ngClass]="'dot-' + getSize()"></span>
+    <span [ngClass]="'dot-' + getSize()"></span>
+    <span [ngClass]="'dot-' + getSize()"></span>
+  </div>
+  <div class="column">
+    <span [ngClass]="'dot-' + getSize()"></span>
+    <span [ngClass]="'dot-' + getSize()"></span>
+    <span [ngClass]="'dot-' + getSize()"></span>
+  </div>
+
+</div>

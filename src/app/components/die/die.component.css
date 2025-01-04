@@ -1,0 +1,98 @@
+.dice-sm, .dice-md, .dice-lg {
+  background-color: tomato;
+  border-radius: 10%;
+}
+.dot-sm, .dot-md, .dot-lg{
+  display: block;
+  border-radius: 50%;
+  background-color:white;
+}
+
+.dice-sm {
+  width: 1.5em;
+  height: 1.5em;
+  padding: .2em;
+  margin: .33em;
+}
+
+.dice-md {
+  width: 3em;
+  height: 3em;
+  padding: .3em;
+  margin: .66em;
+}
+
+.dice-lg {
+  width: 4.5em;
+  height: 4.5em;
+  padding: .5em;
+  margin: 1em;
+}
+
+.dot-sm {
+  width: .4em;
+  height: .4em;
+}
+
+.dot-md {
+  width: .8em;
+  height: .8em;
+}
+
+.dot-lg {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+
+.first-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-face{
+  display: flex ;
+  justify-content: space-between;
+}
+
+.second-face .dot:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+.third-face {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-end {
+  align-self: flex-end;
+}
+
+.third-face .dot:nth-of-type(1) {
+  align-self :flex-end;
+}
+
+.third-face .dot:nth-of-type(2) {
+  align-self :center;
+}
+
+.align-center {
+  align-self: center;
+}
+
+
+.fourth-face , .sixth-face, .fifth-face{
+  display: flex;
+  justify-content: space-between;
+}
+
+.fourth-face .column , .sixth-face .column, .fifth-face .column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fifth-face .column:nth-of-type(2) {
+  justify-content: center;
+}

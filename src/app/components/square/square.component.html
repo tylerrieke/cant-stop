@@ -1,0 +1,6 @@
+<div [ngClass]="isTop() ? 'square1' : 'square2'" [style.background-color]="winningColor">
+  <p *ngIf="isTop()" class="columnNumber">{{numValue}}</p>
+  <div *ngFor='let chip of chips; index as i; let index = index' style="position: absolute">
+    <div app-chip [index]="i+1" [numberOf]="chips.length" [color]="chip"></div>
+  </div>
+</div>

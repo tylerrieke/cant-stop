@@ -1,0 +1,29 @@
+<div class="turn-info-section" *ngIf="!isGameOver()">
+  <div app-turn-info-box [color]="currentPlayerColor" style="flex: auto"></div>
+  <button *ngIf="!canSwitchPlayers()" [ngClass]="{ 'invisible': !canStop() }" type="button" class="action-button" [disabled]="false" (click)="stopTurn()" style="font-size: 3em"> STOP!</button>
+  <button *ngIf="canSwitchPlayers()" type="button" class="action-button" [disabled]="false" (click)="switchPlayers()" style="font-size: 2em"> Next Player</button>
+</div>
+
+<div class="roll-dice-section" *ngIf="!isGameOver()">
+  <div app-dice-box [dice]="dice" [diceSize]="'medium'"></div>
+  <button [hidden]="!canRoll()" type="button" class="action-button" [disabled]="false" (click)="rollDice()"> Roll</button>
+</div>
+
+<div class="options-to-select" *ngIf="!isGameOver()">
+  <div *ngFor='let optionPairs of options' class="option-to-select">
+    <div app-option-box [dicePairs]="optionPairs" style="flex: auto"></div>
+    <button type="button" class="action-button" [disabled]="false" (click)="selectOption(optionPairs)"> Select</button>
+  </div>
+</div>
+
+<p *ngIf="isBusted()" style="font-size: 3em; align-self: center"> BUSTED</p>
+
+<div class="options-to-select" *ngIf="isGameOver()">
+  <h1 *ngIf="dice && dice.length">Player</h1>
+  <div *ngIf="dice && dice.length" app-chip [index]="1" [numberOf]="1" [color]="currentPlayerColor" [size]="'large'" ></div>
+  <h1 *ngIf="dice && dice.length">WINS!!</h1>
+  <button type="button" class="action-button" [disabled]="false" (click)="createGame(1)"> New 1 Player Game</button>
+  <button type="button" class="action-button" [disabled]="false" (click)="createGame(2)"> New 2 Player Game</button>
+  <button type="button" class="action-button" [disabled]="false" (click)="createGame(3)"> New 3 Player Game</button>
+  <button type="button" class="action-button" [disabled]="false" (click)="createGame(4)"> New 4 Player Game</button>
+</div>

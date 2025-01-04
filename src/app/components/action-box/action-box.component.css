@@ -1,0 +1,50 @@
+.roll-dice-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  flex-wrap: wrap;
+  align-content: center;
+  font-family: 'Open Sans', sans-serif;
+  margin: 1em;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.turn-info-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  flex-wrap: wrap;
+  align-content: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.options-to-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.option-to-select {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: right;
+  vertical-align: center;
+  flex-wrap: wrap;
+  align-content: center;
+  font-family: 'Open Sans', sans-serif;
+  border: .1em dashed;
+  margin: .5em;
+}
+
+.action-button {
+  margin: .5em;
+  width: 5em;
+}

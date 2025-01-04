@@ -1,0 +1,4 @@
+<div *ngFor='let column of getColumns(); let isFirst = first' class="column-wrapper">
+  <div app-column [colNum]="column.value" [colorChips]="column.chips" class="column" *ngIf="isFirst"></div>
+  <div app-column [colNum]="column.value" [colorChips]="column.chips" class="column" *ngIf="!isFirst"></div>
+</div>

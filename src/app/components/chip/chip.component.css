@@ -1,0 +1,49 @@
+.chip1of1,
+.chip1of2,
+.chip2of2,
+.chip1of3,
+.chip2of3,
+.chip3of3,
+.chip1of4,
+.chip2of4,
+.chip3of4,
+.chip4of4 {
+  position: relative;
+  width: 0.7em;
+  height: .7em;
+  border: .2em ridge;
+  border-color: crimson;
+  background-color: crimson;
+  border-radius: 50%;
+}
+
+.chip-lg {
+  width: 2.1em;
+  height: 2.1em;
+  border-width: .6em;
+}
+
+.chip1of2,
+.chip2of4{
+  left: -0.075em;
+}
+
+.chip2of2,
+.chip3of4{
+  left: 0.075em;
+}
+
+.chip1of3 {
+  left: -0.15em;
+}
+
+.chip3of3 {
+  left: 0.15em;
+}
+
+.chip1of4 {
+  left: -0.225em;
+}
+.chip4of4 {
+  left: 0.225em;
+}

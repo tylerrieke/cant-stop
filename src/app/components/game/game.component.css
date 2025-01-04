@@ -1,0 +1,21 @@
+.game {
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+  background-color: #da9e88;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  width: 37.5em;
+  background-color: #da9e88;
+  margin: 1em;
+}
+
+.action-box {
+  display: flex;
+  justify-content: normal;
+  background-color: #ba8775;
+  flex-direction: column;
+}
