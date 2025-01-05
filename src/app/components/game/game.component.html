@@ -1,4 +1,4 @@
 <div class="game">
   <div app-board class="columns" [board]="board"></div>
-  <div app-action-box class="action-box" [dice]="board.Dice" [phase]="board.TurnPhase" [currentPlayerColor]="board.Players[board.CurrentPlayerIndex].Color" [options]="board.Options" (boardUpdated)="handleBoardUpdate($event)"></div>
+  <div app-action-box class="action-box" [dice]="board.Dice" [phase]="board.TurnPhase" [currentPlayerColor]="board.Players[board.CurrentPlayerIndex].Color" [options]="board.Options" [turnNumber]="board.Turn" (boardUpdated)="handleBoardUpdate($event)"></div>
 </div>

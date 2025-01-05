@@ -9,4 +9,5 @@ import {ChipComponent} from '../chip/chip.component';
 })
 export class TurnInfoBoxComponent {
   @Input() color: string = "blue"
+  @Input() turn: number = 0
 }

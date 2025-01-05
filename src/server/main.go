@@ -87,6 +87,7 @@ func startGame(w http.ResponseWriter, r *http.Request) {
 		TurnPhase:          models.TURN_START,
 		Dice:               []int{6, 6, 6, 6},
 		Options:            make([][][]int, 0),
+		Turn:               1,
 	}
 	w.Header().Set("Content-Type", "application/json")
 	for _, game := range games {

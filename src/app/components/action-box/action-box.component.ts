@@ -17,6 +17,7 @@ export class ActionBoxComponent {
   @Input() phase :string = "TURN_START"
   @Input() options :any[][][] = []
   @Input() currentPlayerColor :string = "blue"
+  @Input() turnNumber :number = 0
 
   @Output() boardUpdated = new EventEmitter<any>();
 

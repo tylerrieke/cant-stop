@@ -51,6 +51,7 @@ type Game struct {
 	Dice               []int
 	Options            [][][]int
 	WinningPlayerIndex int
+	Turn               int
 }
 
 func (g *Game) canRoll() bool {
@@ -113,6 +114,9 @@ func (g *Game) NextPlayerTurn() *Game {
 	g.CurrentTurnColumns = map[int]int{}
 	g.CurrentPlayerIndex = (g.CurrentPlayerIndex + 1) % len(g.Players)
 	g.TurnPhase = TURN_START
+	if g.CurrentPlayerIndex == 0 {
+		g.Turn++
+	}
 	return g
 }
 
